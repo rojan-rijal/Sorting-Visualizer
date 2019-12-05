@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
 </head>
 <body>
-    <canvas id="canvas" style="background: #fff;"></canvas>
-    
+    <div class="sorters">
+        <div class="sort">
+            <canvas id="merge" style="background: #fff;"></canvas>
+            <button>Merge!</button>
+        </div>
+        <div class="sort">
+            <canvas id="quick" style="background: #fff;"></canvas>
+            <button>Quicksort!</button>
+        </div>
+        <div class="sort">
+            <canvas id="insert" style="background: #fff;"></canvas>
+            <button>Insert!</button>
+        </div>
+    </div>
 </body>
-<script id="caves" src="scripts/grid.js"></script>
+<script id="sort" src="scripts/grid.js"></script>
 </html>
