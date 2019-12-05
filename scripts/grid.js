@@ -62,39 +62,6 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function colorFound(context, node){
-  context.beginPath();
-  context.fillStyle = "green";
-  context.rect(node.random_pos.x * scale_factor, node.random_pos.y * scale_factor, node.width, node.height);
-  context.fillRect(node.random_pos.x * scale_factor, node.random_pos.y * scale_factor, node.width, node.height);
-  context.stroke();
-}
-
-function colorRed(context, node){
-  context.beginPath();
-  context.fillStyle = "red";
-  context.rect(node.random_pos.x * scale_factor, node.random_pos.y * scale_factor, node.width, node.height);
-  context.fillRect(node.random_pos.x * scale_factor, node.random_pos.y * scale_factor, node.width, node.height);
-  context.stroke();
-}
-
-function colorYellow(context, node){
-  context.beginPath();
-  context.fillStyle = "yellow";
-  context.rect(node.random_pos.x * scale_factor, node.random_pos.y * scale_factor, node.width, node.height);
-  context.fillRect(node.random_pos.x * scale_factor, node.random_pos.y * scale_factor, node.width, node.height);
-  context.stroke();
-}
-
-function createEdge(context, i, j){
-  context.beginPath();
-  context.strokeStyle = "orange"
-  context.moveTo(nodes[i].random_pos.x*scale_factor, nodes[j].random_pos.y*scale_factor);
-  context.lineTo(nodes[i].random_pos.x*scale_factor, nodes[j].random_pos.y*scale_factor);
-  context.stroke();
-}
-
-
 function hasBeenVisited(context, node){
   for(var i = 0; i < visited.length; i++){
     if(visited[i] == node)
