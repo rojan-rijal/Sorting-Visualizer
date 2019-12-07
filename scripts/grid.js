@@ -40,6 +40,34 @@ let visited = [];
 
 //OBJECTS
 
+//Booleans to keep record of the state of whether or not one comparison has
+//been made
+let mergeStep = false;
+let quickStep = false;
+let insertStep = false;
+
+//Main classes for the sorting algos
+class Mergesort(){
+
+  //Step func will make a singular comparison within 
+  step(){}
+}
+
+class Quicksort(){
+  step(){}
+}
+
+class Insertionsort(){
+  step(){}
+}
+
+//This will call each sorting algo's step function
+//Wait for all 3 to return 0 to update the GUI
+//Pause for 1/2 after each step call
+function RaceManager(){
+
+}
+
 class Coord{
   constructor(x, y, z){
     this.x = x;
@@ -125,4 +153,4 @@ let bot = new Node(new Coord(16, 0, 0));
 drawBoard(merge_context, 0);
 drawBoard(quick_context, 1);
 drawBoard(insert_context, 2);
-// let interval = setInterval(() => { moveAnt(myBot); }, 20)
+// let interval = setInterval(() => { moveAnt(myBot); }, 20
