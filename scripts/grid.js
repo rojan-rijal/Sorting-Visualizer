@@ -47,16 +47,55 @@ let quickStep = false;
 let insertStep = false;
 
 //Main classes for the sorting algos
+// Kizar
 class Mergesort(){
 
-  //Step func will make a singular comparison within 
+  //Step func will make a singular comparison within
   step(){}
 }
 
+// Ean
 class Quicksort(){
   step(){}
+
+  //constructor
+  constructor(size, inputArr){
+    this.size;
+    this.inputArr[size];
+  }
+
+  //The main sorting algo for Quicksort
+  partition(low, high)
+  {
+     let pivot = inputArr[low];
+
+     //Left "Dog", looking for something smaller than pivot
+     var i = low;
+     while(inputArr[i] < pivot)
+     {
+       i++
+     }
+
+     //Right "Dog", looking for something bigger than pivot
+     var j = inputArr[high];
+     while(inputArr[j] > pivot)
+     {
+       j--;
+     }
+
+     //swap the elements in the array
+     swap(inputArr, i, j);
+  }
+
+//Used to swap two numbers in an array
+  swap(index1, index2){
+    var temp = myArr[index1];
+    inputArr[index1] = myArr[index2];
+    inputArr[index2] = temp;
+  }
 }
 
+// Rojan
 class Insertionsort(){
   step(){}
 }
