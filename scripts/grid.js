@@ -255,7 +255,11 @@ let tester1 = new Tester(merge_grid, merge_context);
 let tester2 = new Tester(quick_grid, quick_context);
 let tester3 = new Tester(insert_grid, insert_context);
 
-tester1.sort(tester1.unsorted_array, tester1.context);
-tester2.sort(tester2.unsorted_array, tester2.context);
-tester3.sort(tester3.unsorted_array, tester3.context);
+merge_button.onclick = () => { tester1.sort(tester1.unsorted_array, tester1.context); };
+quick_button.onclick = () => { tester2.sort(tester2.unsorted_array, tester2.context); };
+insert_button.onclick = () => { tester3.sort(tester3.unsorted_array, tester3.context); };
+
+// tester1.sort(tester1.unsorted_array, tester1.context);
+// tester2.sort(tester2.unsorted_array, tester2.context);
+// tester3.sort(tester3.unsorted_array, tester3.context);
 // let interval = setInterval(() => { moveAnt(myBot); }, 20
