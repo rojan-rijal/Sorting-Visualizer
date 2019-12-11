@@ -49,6 +49,41 @@ let insertStep = false;
 //Main classes for the sorting algos
 // Kizar
 class Mergesort{
+    arr = [2,3,4,52,6,77,11,3,6,9]
+    mergesort(arr){
+
+    var len = arr.length;
+    var mid = Math.floor(len/2);
+    var left = arr.slice(0,mid);
+    var right = arr.slice(mid);
+    
+    if(len < 2){
+      return arr;
+    }
+    // break the array into left and right components 
+    return merge(mergesort(left),mergesort(right));
+   }
+
+    merge(left,right){
+  
+      var  result = [];
+      var  lLen = left.length;
+      var  rLen = right.length;
+      var  l = 0;
+      var  r = 0;
+  
+  while(l < lLen && r < rLen){
+     if(left[l] < right[r]){
+       result.push(left[l++]);
+     }
+     else{
+       result.push(right[r++]);
+    }
+  } 
+  //remaining part needs to be added to the result
+  return result.concat(left.slice(l)).concat(right.slice(r));
+ }
+
 
   //Step func will make a singular comparison within
   step(){}
