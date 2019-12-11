@@ -48,15 +48,15 @@ let insertStep = false;
 
 //Main classes for the sorting algos
 // Kizar
-class Mergesort(){
+class Mergesort{
 
   //Step func will make a singular comparison within
   step(){}
 }
 
 // Ean
-class Quicksort(){
-  step(){}
+class Quicksort{
+  // step(){}
 
   //constructor
   constructor(size, inputArr){
@@ -96,7 +96,7 @@ class Quicksort(){
 }
 
 // Rojan
-class Insertionsort(){
+class Insertionsort{
   step(){}
 }
 
